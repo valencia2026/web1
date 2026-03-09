@@ -10,6 +10,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -23,7 +24,14 @@
             <input type="text" name="myName" id="myName" class="form-control" />
           </div>
           <div class="mb-3">
-            <label for="myEmail" class="form-label">Email:</label>
+            <label
+              id="emailBox"
+              onmouseover="emailMessage()"
+              onmouseout="blankMessage()"
+              for="myName"
+              class="form-label"
+              >Email:</label
+            >
             <input
               type="text"
               name="myEmail"
