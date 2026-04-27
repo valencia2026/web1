@@ -1,98 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Puma</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/js/script.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>Our Puma Vacation Website</h1>
-      </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Jean Baptiste | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <main>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">PumaNav</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="table.html">Table</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="table.html">Table</a>
-                </li>
+<header>
+  <nav>
+    <h1>John Jean Baptiste</h1>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="weather.html">Weather</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <video width="420" height="240" controls onloadstart="videoFunction()">
-          <source src="myMovie.mp4" type="video/mp4" />
-          Your browser does not support the video element
-        </video>
-        <p id="myComment">My Youtube Video:</p>
-        <audio controls>
-          <source src="mySound.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element
-        </audio>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/pZ7WLQbLDn8?si=vAzoIZqPLDWkzwP7"
-          title="YouTube video player"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </main>
-      <footer>
-        <p>Copyriht 2026 John Jean baptiste</p>
-      </footer>
-    </div>
-  </body>
+    <ul class="nav-links">
+      <li><a href="#home" id="navHome">Home</a></li>
+      <li><a href="#projects" id="navProjects">Projects</a></li>
+      <li><a href="#aboutSection" id="navAbout">About</a></li>
+      <li><a href="#contact" id="navContact">Contact</a></li>
+    </ul>
+
+    <button onclick="toggleLanguage()" id="langBtn">ES</button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2 id="title">Web Developer</h2>
+  <p id="about">
+    Creative and detail-oriented Web Developer passionate about building modern, responsive, and user-focused digital experiences.
+  </p>
+
+  <a href="resume.pdf" download class="btn">Download Resume</a>
+</section>
+
+<section class="skills" id="aboutSection">
+  <h2 id="skillsTitle">Skills</h2>
+  <div class="skill-list">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>PHP</span>
+    <span>MySQL</span>
+    <span>Node.js</span>
+    <span>Tailwind</span>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <h2 id="projectsTitle">Projects</h2>
+
+  <div class="project">
+    
+ <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=1200&q=80" alt="Health System">
+    <h3>Health System</h3>
+    <p id="p1Desc">
+      A digital platform designed to manage patient records and improve healthcare efficiency.
+    </p>
+
+    <a href="health.html">View Project →</a>
+  </div>
+
+  <div class="project">
+     <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=1200&q=80" alt="Health System">
+   
+
+    <h3>Online Course</h3>
+    <p id="p2Desc">
+      A web-based learning platform that allows users to access courses anytime, anywhere.
+    </p>
+
+    <a href="course.html">View Project →</a>
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+  <h2 id="contactTitle">Contact</h2>
+  <p>Email: Jeanbaptistejohn89@gmail.com</p>
+
+  <div class="socials">
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+    <a href="#">Portfolio</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 John Jean Baptiste</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
